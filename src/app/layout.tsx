@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HeadNavbar from "@/components/HeadNavbar";
+import { Metadata } from "next";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -19,7 +19,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "B-BarberShop",
   description:
-    "Welcome to B-BarberShop, where classic barbering traditions meet modern style. Experience tailored haircuts that reflect your personality, precision shaves, and an atmosphere fit for a gentleman. With skilled barbers and premium products, were more than just a barbershop—were a destination for mens grooming and lifestyle. Step in and discover your style today!",
+    "Your destination for men's grooming.",
   keywords: [
     "Barbershop",
     "Barber near me",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     "Fade haircut",
     "Razor shave",
     "Grooming packages",
-    "Gentlemen's lounge",
-  ],
+    "Gentlemen's lounge",]
 };
+
 
 export default function RootLayout({
   children,
