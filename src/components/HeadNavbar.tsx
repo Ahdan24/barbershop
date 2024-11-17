@@ -13,32 +13,27 @@ const HeadNavbar = () => {
           <span>Call For Appointment</span>
         </div>
       </div>
-      
-      
 
-    <div className="flex items-center justify-center space-x-4 py-4 px-4">
-      <div className="flex items-center space-x-2">
-        <FaInstagram className="text-yellow-500 text-lg" />
-        <span className="text-white text-sm">B-BarberShop</span>
+      <div className="flex items-center justify-center space-x-4 py-4 px-4">
+        <div className="flex items-center space-x-2">
+          <FaInstagram className="text-yellow-500 text-lg" />
+          <span className="text-white text-sm">B-BarberShop</span>
+        </div>
+
+        <div className="w-px h-6 bg-yellow-500"></div>
+
+        <div className="flex items-center space-x-2">
+          <FaGlobe className="text-yellow-500 text-lg" />
+          <a
+            href="/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white text-sm hover:underline"
+          >
+            www.B-BarberShop.com
+          </a>
+        </div>
       </div>
-
-      <div className="w-px h-6 bg-yellow-500"></div>
-
-      <div className="flex items-center space-x-2">
-        <FaGlobe className="text-yellow-500 text-lg" />
-        <a
-          href="/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white text-sm hover:underline"
-        >
-          www.B-BarberShop.com
-        </a>
-      </div>
-    </div>
- 
-
-
     </nav>
   );
 };

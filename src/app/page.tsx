@@ -6,10 +6,10 @@ import Testimoni from "@/components/Testimoni";
 import { getEntries } from "@/lib/contentful";
 
 interface HomeProps {
-  searchParams: {[key: string]: string}
+  searchParams: { [key: string]: string };
 }
 
-export default async function Home({searchParams}: HomeProps) {
+export default async function Home({ searchParams }: HomeProps) {
   const barbers = await getEntries(Number(searchParams.page) || 1);
   if (!barbers) {
     return;

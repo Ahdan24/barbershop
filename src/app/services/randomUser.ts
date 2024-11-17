@@ -17,7 +17,9 @@ export interface RandomUser {
 }
 
 // Fungsi untuk mengambil data pengguna
-export const fetchRandomUsers = async (count: number): Promise<RandomUser[]> => {
+export const fetchRandomUsers = async (
+  count: number,
+): Promise<RandomUser[]> => {
   const response = await axios.get("https://randomuser.me/api/", {
     params: { results: count },
   });

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   Pagination,
   PaginationContent,
@@ -28,7 +28,7 @@ const PaginationSection: FC<PaginatiosnSectionProps> = ({ total, limit }) => {
   };
 
   const handlePrevPage = () => {
-    if (currentPage > 1 ) {
+    if (currentPage > 1) {
       router.push(`?page=${currentPage - 1}`);
     }
   };

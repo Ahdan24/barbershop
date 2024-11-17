@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useEffect, useState } from "react";
 import { fetchRandomUsers, RandomUser } from "../services/randomUser";
 
@@ -10,7 +10,7 @@ const OurTeam = () => {
   useEffect(() => {
     const getTeamMembers = async () => {
       try {
-        const members = await fetchRandomUsers(6); 
+        const members = await fetchRandomUsers(6);
         setTeamMembers(members);
       } catch (err) {
         setError("No data.");

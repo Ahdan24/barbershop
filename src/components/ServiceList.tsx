@@ -14,7 +14,7 @@ const ServiceList: FC<BarberListProps> = ({ barbers }) => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 py-8 md:py-10">
         {barbers?.map((barber, index) => (
-          <ServicesCard key={index} barber={barber}/>
+          <ServicesCard key={index} barber={barber} />
         ))}
       </div>
     </section>

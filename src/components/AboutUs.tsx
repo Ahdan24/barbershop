@@ -68,7 +68,7 @@ const AboutUs = () => {
           </p>
 
           <div className="mx-10 flex justify-center md:justify-start">
-            <Button  className="bg-blue-500 hover:bg-red-500 rounded-xl text-white text-center">
+            <Button className="bg-blue-500 hover:bg-red-500 rounded-xl text-white text-center">
               Learn More !
             </Button>
           </div>

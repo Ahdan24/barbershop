@@ -1,9 +1,5 @@
 import Image from "next/image";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 interface CardProps {
   title?: string;
@@ -32,7 +28,9 @@ const CardComponent: React.FC<CardProps> = ({
           />
         ) : (
           title && (
-            <p className={`text-3xl flex justify-center font-bold ${titleStyle}`}>
+            <p
+              className={`text-3xl flex justify-center font-bold ${titleStyle}`}
+            >
               {title}
             </p>
           )
@@ -49,13 +47,15 @@ const About = () => {
   return (
     <section className="pt-8 gap-6 bg-gray-800">
       <div className="mt-6 md:mt-0 col-span-1 md:col-span-2 px-4 sm:px-0">
-        <p className="font-bold text-center md:text-left mx-10 text-white">Learn About Us</p>
+        <p className="font-bold text-center md:text-left mx-10 text-white">
+          Learn About Us
+        </p>
         <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl text-center md:text-left mt-2 md:mt-4 mx-10 text-blue-500">
           15 Years Experience
         </h1>
         <div>
           <p className="text-white mx-10 mt-5 md:mt-10 text-sm sm:text-base text-justify">
-             Welcome to – B-BarberShop where craftsmanship meets community.
+            Welcome to – B-BarberShop where craftsmanship meets community.
             Founded on a love for grooming and a dedication to quality, we’re
             more than just a barbershop. We’re a place where tradition and style
             come together, B-BarberShop and where every client is treated like
@@ -91,7 +91,13 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <CardComponent
             title="VISION"
-            content={<p className=" text-white">To be the leading barbershop in our community, known for exceptional grooming experiences, a welcoming atmosphere, and a commitment to elevating the art of barbering.</p>}
+            content={
+              <p className=" text-white">
+                To be the leading barbershop in our community, known for
+                exceptional grooming experiences, a welcoming atmosphere, and a
+                commitment to elevating the art of barbering.
+              </p>
+            }
             bgColor="bg-slate-600"
             titleStyle="text-blue-500"
           />
@@ -99,28 +105,45 @@ const About = () => {
           <CardComponent
             imageSrc="/ceo-B-barberShop.png"
             title="Our Executive Officer"
-            content={<p className="text-blue-500 text-2xl font-bold">Our Executive Officer</p>}
+            content={
+              <p className="text-blue-500 text-2xl font-bold">
+                Our Executive Officer
+              </p>
+            }
             bgColor="bg-slate-600"
-            
           />
 
           <CardComponent
             title="MISION"
             content={
               <ul className="list-disc list-inside text-start text-white">
-                <li>Craft Excellence: Deliver high-quality haircuts, grooming services, and styling tailored to each client’s unique personality and preferences.</li>
-                <li>Customer-Centric Experience: Create a comfortable and inclusive environment where every client feels valued and appreciated.</li>
-                <li>Innovation & Tradition: Blend modern techniques with timeless barbering traditions to stay ahead of trends while honoring the craft.</li>
-                <li>Community Impact: Support the local community by fostering connections, promoting self-confidence, and inspiring individuality through grooming.</li>
+                <li>
+                  Craft Excellence: Deliver high-quality haircuts, grooming
+                  services, and styling tailored to each client’s unique
+                  personality and preferences.
+                </li>
+                <li>
+                  Customer-Centric Experience: Create a comfortable and
+                  inclusive environment where every client feels valued and
+                  appreciated.
+                </li>
+                <li>
+                  Innovation & Tradition: Blend modern techniques with timeless
+                  barbering traditions to stay ahead of trends while honoring
+                  the craft.
+                </li>
+                <li>
+                  Community Impact: Support the local community by fostering
+                  connections, promoting self-confidence, and inspiring
+                  individuality through grooming.
+                </li>
               </ul>
             }
             bgColor="bg-slate-600"
             titleStyle="text-blue-500"
           />
 
-          <div>
-            
-          </div>
+          <div></div>
         </div>
       </div>
     </section>

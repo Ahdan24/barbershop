@@ -6,7 +6,7 @@ const Testimoni = () => {
       <div className="flex justify-center text-white">
         <h1>Customer satisfaction</h1>
       </div>
-      
+
       <div className=" pt-10">
         <TestiMarquee />
       </div>
