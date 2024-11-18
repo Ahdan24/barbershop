@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const AboutUs = () => {
   return (
@@ -66,11 +67,13 @@ const AboutUs = () => {
             next. So come in, relax, and let us take care of you – because at
             B-BarberShop, great style is just the beginning.
           </p>
-
-          <div className="mx-10 flex justify-center md:justify-start">
-            <Button className="bg-blue-500 hover:bg-red-500 rounded-xl text-white text-center">
-              Learn More !
-            </Button>
+          <div className="m-10">
+            <Link
+              href={"/service"}
+              className="rounded-xl bg-blue-500 py-1 px-5 hover:bg-red-500"
+            >
+              Learn more
+            </Link>
           </div>
         </div>
       </div>
