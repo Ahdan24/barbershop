@@ -1,6 +1,5 @@
 import axios from "axios";
 
-// Definisikan tipe data yang sesuai dengan struktur respons API randomuser.me
 export interface RandomUser {
   name: {
     title: string;
@@ -16,7 +15,6 @@ export interface RandomUser {
   };
 }
 
-// Fungsi untuk mengambil data pengguna
 export const fetchRandomUsers = async (
   count: number,
 ): Promise<RandomUser[]> => {

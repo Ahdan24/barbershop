@@ -8,7 +8,8 @@ interface BarberListProps {
 
 const ServiceList: FC<BarberListProps> = ({ barbers }) => {
   return (
-    <section className="container mx-auto px-10 bg-gray-800 text-white">
+    <section className="px-10 bg-gray-800 text-white">
+      <div className=" bg-gray">
       <h1 className="text-2xl md:text-3xl font-bold flex justify-center pt-8 md:pt-10">
         Services of B-Barbershop
       </h1>
@@ -17,6 +18,7 @@ const ServiceList: FC<BarberListProps> = ({ barbers }) => {
           <ServicesCard key={index} barber={barber} />
         ))}
       </div>
+    </div>
     </section>
   );
 };
